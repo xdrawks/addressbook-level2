@@ -13,4 +13,11 @@ public class Block {
 	public Block (String block){
 		this.block = block;
 	}
+	
+	/**
+	 * Gets the block String in this class.
+	 */
+	public String getBlock(){
+		return this.block;
+	}
 }
