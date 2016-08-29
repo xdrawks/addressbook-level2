@@ -7,5 +7,10 @@ public class Block {
 	
 	private String block;
 	
-	
+	/**
+	 * Constructs an address component, block
+	 */
+	public Block (String block){
+		this.block = block;
+	}
 }
