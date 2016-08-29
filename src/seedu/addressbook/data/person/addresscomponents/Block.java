@@ -5,5 +5,7 @@ package seedu.addressbook.data.person.addresscomponents;
  */
 public class Block {
 	
-		
+	private String block;
+	
+	
 }
