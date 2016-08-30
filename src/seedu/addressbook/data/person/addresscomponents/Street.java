@@ -17,7 +17,8 @@ public class Street {
     /**
      * Gets the street value in this class
      */
-    public String getStreetValue() {
+    @Override
+    public String toString() {
         return this.streetValue;
     }
     
