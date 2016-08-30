@@ -26,4 +26,11 @@ public class PostalCode {
         return postalCodeValue.hashCode();
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return obj == this //If they have same object
+                || (obj instanceof PostalCode 
+                        && this.postalCodeValue.equals(((PostalCode)obj).postalCodeValue)); //or check if they have same postal code value.
+    }
+    
 }
