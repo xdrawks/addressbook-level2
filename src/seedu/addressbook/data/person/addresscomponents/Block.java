@@ -5,19 +5,19 @@ package seedu.addressbook.data.person.addresscomponents;
  */
 public class Block {
     
-    private String block;
+    private String blockValue;
     
     /**
      * Constructs an address component, block
      */
     public Block (String block){
-        this.block = block;
+        this.blockValue = block;
     }
     
     /**
      * Gets the block String in this class.
      */
     public String getBlock(){
-        return this.block;
+        return this.blockValue;
     }
 }
