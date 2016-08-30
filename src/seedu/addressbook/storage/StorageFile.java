@@ -48,6 +48,7 @@ public class StorageFile {
     public final Path path;
 
     public boolean isFileAvailableAtInit = true; //Check at initialisation if file is available, assume true first.
+    
     /**
      * @throws InvalidStorageFilePathException if the default path is invalid
      */
