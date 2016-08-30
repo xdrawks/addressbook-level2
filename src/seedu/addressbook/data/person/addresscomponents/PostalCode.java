@@ -17,7 +17,8 @@ public class PostalCode {
     /**
      * Gets the postal code value in this class
      */
-    public String getPostalCodeValue() {
+    @Override
+    public String toString() {
         return this.postalCodeValue;
     }
     
