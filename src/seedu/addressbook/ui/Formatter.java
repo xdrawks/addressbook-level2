@@ -36,6 +36,15 @@ public class Formatter {
         return formatted.toString();
     }
 
+    /**
+     * Formats a string as a viewable indexed list item.
+     *
+     * @param visibleIndex visible index for this listing
+     */
+    static String getIndexedListItem(int visibleIndex, String listItem) {
+        return String.format(TextUi.MESSAGE_INDEXED_LIST_ITEM, visibleIndex, listItem);
+    }
+
     
     
 }
