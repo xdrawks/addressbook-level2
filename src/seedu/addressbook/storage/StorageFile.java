@@ -133,8 +133,11 @@ public class StorageFile {
 
         // create empty file if not found
         } catch (FileNotFoundException fnfe) {
+            
+            this.isFileAvailableAtInit = false; //File is not found, so mark this as false.
             final AddressBook empty = new AddressBook();
             save(empty);
+            this.isFileAvailableAtInit = true; //Once done, mark this as true.
             return empty;
 
         // other errors
