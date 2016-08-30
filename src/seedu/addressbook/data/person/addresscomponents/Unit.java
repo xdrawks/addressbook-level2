@@ -30,4 +30,10 @@ public class Unit {
     public String getDoorNumberValue() {
         return this.doorNumberValue;
     }
+    
+    @Override
+    public int hashCode() {
+        //X added to partition level and door number.
+        return (levelValue + "X" + doorNumberValue).hashCode();
+    }
 }
