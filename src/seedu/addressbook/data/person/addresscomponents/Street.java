@@ -7,4 +7,10 @@ public class Street {
 	
 	private String street;
 	
+	/**
+	 * Constructs an address component, Street
+	 */
+	public Street (String street){
+		this.street = street;	
+	}
 }
