@@ -86,6 +86,10 @@ public class StorageFile {
      */
     public void save(AddressBook addressBook) throws StorageOperationException {
 
+        if (this.isFileAvailableAtInit && !isFileAvailable()) {
+            throw new StorageOperationException("File is deleted while the programme is running: " + path);
+        }
+        
         /* Note: Note the 'try with resource' statement below.
          * More info: https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
          */
