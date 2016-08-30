@@ -8,11 +8,10 @@ public class Unit {
     private String unitValue;
     
     /**
-     * Constructs an address component, unit, with level and doorNumber.
+     * Constructs an address component, unit.
      */
-    public Unit (String level, String doorNumber) {
-        this.levelValue = level;
-        this.doorNumberValue = doorNumber;
+    public Unit (String unitValue) {
+        this.unitValue = unitValue;
     }
     
     /**
