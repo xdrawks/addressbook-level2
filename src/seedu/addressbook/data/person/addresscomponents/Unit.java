@@ -30,8 +30,7 @@ public class Unit {
     public boolean equals(Object obj) {
         return obj == this //If they have same object
                 || (obj instanceof Unit 
-                        && this.levelValue.equals(((Unit)obj).levelValue)
-                        && this.doorNumberValue.equals(((Unit)obj).doorNumberValue)); //or check if they have same level and door value.
+                        && this.unitValue.equals(((Unit)obj).unitValue)); //or check if they have same unit value.
         
     }
     
