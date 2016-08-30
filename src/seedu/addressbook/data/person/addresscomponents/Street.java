@@ -15,9 +15,9 @@ public class Street {
     }
     
     /**
-     * Gets the street String in this class
+     * Gets the street value in this class
      */
-    public String getStreet(){
+    public String getStreetValue(){
         return this.streetValue;
     }
 }
