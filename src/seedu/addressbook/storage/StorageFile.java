@@ -140,6 +140,12 @@ public class StorageFile {
             throw new StorageOperationException("File contains illegal data values; data type constraints not met");
         }
     }
+    /**
+     * Checks if file is available.
+     */
+    public boolean isFileAvailable() {
+        return (path.toFile().exists());      
+    }
 
     public String getPath() {
         return path.toString();
