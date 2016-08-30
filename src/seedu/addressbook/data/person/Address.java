@@ -81,7 +81,10 @@ public class Address {
     public boolean equals(Object other) {
         return other == this // short circuit if same object
                 || (other instanceof Address // instanceof handles nulls
-                && this.value.equals(((Address) other).value)); // state check
+                && this.block.equals(((Address) other).block)
+                    && this.unit.equals(((Address) other).unit)
+                            && this.street.equals(((Address) other).street)
+                                    && this.postalCode.equals(((Address) other).postalCode)); // state every single address component.
     }
 
     @Override
