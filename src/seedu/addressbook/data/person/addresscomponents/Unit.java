@@ -17,7 +17,8 @@ public class Unit {
     /**
      * Gets the unit value
      */
-    public String getUnitValue() {
+    @Override
+    public String toString() {
         return this.unitValue;
     }
     
