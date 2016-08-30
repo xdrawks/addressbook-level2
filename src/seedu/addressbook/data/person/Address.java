@@ -41,10 +41,28 @@ public class Address {
      */
     public Address(String address, boolean isPrivate) throws IllegalValueException {
         this.isPrivate = isPrivate;
+        
         if (!isValidAddress(address)) {
             throw new IllegalValueException(MESSAGE_ADDRESS_CONSTRAINTS);
         }
-        this.value = address;
+        
+        //We assume the following input format: BLOCK, STREET, UNIT, POSTAL_CODE
+        String[] addressComponent = address.split(", ");
+        
+        switch (addressComponent.length){
+            case (4):
+                this.postalCode = new PostalCode(addressComponent[3]);
+            case (3):
+                this.unit = new Unit(addressComponent[2]);
+            case (2):
+                this.street = new Street(addressComponent[1]);
+            case (1):
+                this.block = new Block(addressComponent[0]);
+                break;
+            default:
+                //The address does not meet the assumption above, throw an exception.
+                throw new IllegalValueException(MESSAGE_ADDRESS_CONSTRAINTS);
+        }
     }
 
     /**
