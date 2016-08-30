@@ -5,8 +5,7 @@ package seedu.addressbook.data.person.addresscomponents;
  */
 public class Unit {
     
-    private String levelValue;
-    private String doorNumberValue;
+    private String unitValue;
     
     /**
      * Constructs an address component, unit, with level and doorNumber.
