@@ -21,4 +21,9 @@ public class PostalCode {
         return this.postalCodeValue;
     }
     
+    @Override
+    public int hashCode() {
+        return postalCodeValue.hashCode();
+    }
+
 }
