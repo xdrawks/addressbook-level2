@@ -1,5 +1,6 @@
 package seedu.addressbook.data.person;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 import seedu.addressbook.data.exception.IllegalValueException;
@@ -76,7 +77,36 @@ public class Address {
 
     @Override
     public String toString() {
-        return value;
+        
+        ArrayList<String> addressComponents = new ArrayList<>();
+        
+        if (block != null) {
+            addressComponents.add(block.toString());
+        }
+        
+        if (street != null) {
+            addressComponents.add(street.toString());
+        }
+        
+        if (unit != null) {
+            addressComponents.add(unit.toString());
+        }
+        
+        if (postalCode != null) {
+            addressComponents.add(postalCode.toString());
+        }
+        
+        StringBuilder addressValue = new StringBuilder();
+        String divider = ", ";
+        
+        for (int i = 0; i < addressComponents.size(); i++){
+            addressValue.append(addressComponents.get(i));
+            if (i != addressComponents.size() - 1) {
+                addressValue.append(divider);
+            }
+        }
+        
+        return addressValue.toString();
     }
 
     @Override
