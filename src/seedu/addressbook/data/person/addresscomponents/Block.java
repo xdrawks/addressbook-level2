@@ -17,7 +17,8 @@ public class Block {
     /**
      * Gets the block String in this class.
      */
-    public String getBlockValue() {
+    @Override
+    public String toString() {
         return this.blockValue;
     }
 
