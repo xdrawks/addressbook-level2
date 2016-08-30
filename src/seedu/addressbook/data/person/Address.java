@@ -86,7 +86,7 @@ public class Address {
 
     @Override
     public int hashCode() {
-        return value.hashCode();
+        return new int[] {Objects.hashCode(block), Objects.hashCode(unit), Objects.hashCode(street), Objects.hashCode(postalCode)}.hashCode();
     }
 
     public boolean isPrivate() {
