@@ -17,7 +17,7 @@ public class Block {
     /**
      * Gets the block String in this class.
      */
-    public String getBlock(){
+    public String getBlockValue(){
         return this.blockValue;
     }
 }
