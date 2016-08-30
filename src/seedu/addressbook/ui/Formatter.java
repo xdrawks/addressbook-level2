@@ -12,6 +12,16 @@ public class Formatter {
     
     /** A platform independent line separator. */
     private static final String LS = System.lineSeparator();
+    /** Formats a list of strings as a viewable indexed list. */
+    static String getIndexedListForViewing(List<String> listItems) {
+        final StringBuilder formatted = new StringBuilder();
+        int displayIndex = 0 + TextUi.DISPLAYED_INDEX_OFFSET;
+        for (String listItem : listItems) {
+            formatted.append(Formatter.getIndexedListItem(displayIndex, listItem)).append("\n");
+            displayIndex++;
+        }
+        return formatted.toString();
+    }
 
     
     
