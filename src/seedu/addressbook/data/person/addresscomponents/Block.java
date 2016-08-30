@@ -25,4 +25,13 @@ public class Block {
     public int hashCode() {
         return blockValue.hashCode();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj == this //If they have same object
+                || (obj instanceof Block 
+                        && this.blockValue.equals(((Block)obj).blockValue)); //or check if they have same block value.
+    }
+    
+    
 }
