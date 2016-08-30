@@ -20,4 +20,9 @@ public class Block {
     public String getBlockValue() {
         return this.blockValue;
     }
+
+    @Override
+    public int hashCode() {
+        return blockValue.hashCode();
+    }
 }
