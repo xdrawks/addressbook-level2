@@ -23,8 +23,7 @@ public class Unit {
     
     @Override
     public int hashCode() {
-        //X added to partition level and door number.
-        return (levelValue + "X" + doorNumberValue).hashCode();
+        return unitValue.hashCode();
     }
 
     @Override
