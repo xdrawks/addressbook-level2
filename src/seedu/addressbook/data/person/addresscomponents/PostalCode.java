@@ -6,4 +6,11 @@ package seedu.addressbook.data.person.addresscomponents;
 public class PostalCode {
     
     private String postalCodeValue;
+    
+    /**
+     * Constructs an address component, postal code
+     */
+    public PostalCode (String postalCode){
+        this.postalCodeValue = postalCode;
+    }
 }
