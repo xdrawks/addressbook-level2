@@ -25,11 +25,12 @@ public class Address {
     /**
      * Constructs address object with address components
      */
-    public Address(Block block, PostalCode postalCode, Street street, Unit unit) {
+    public Address(Block block, PostalCode postalCode, Street street, Unit unit, boolean isPrivate) {
         this.block = block;
         this.postalCode = postalCode;
         this.street = street;
         this.unit = unit;
+        this.isPrivate = isPrivate;
     }
     
     
