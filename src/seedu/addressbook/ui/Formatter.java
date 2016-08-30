@@ -12,6 +12,11 @@ public class Formatter {
     
     /** A platform independent line separator. */
     private static final String LS = System.lineSeparator();
+    
+    static String addLinePrefix(String string) {
+        return LINE_PREFIX + string;
+    }
+    
     /** Formats a list of strings as a viewable indexed list. */
     static String getIndexedListForViewing(List<String> listItems) {
         final StringBuilder formatted = new StringBuilder();
