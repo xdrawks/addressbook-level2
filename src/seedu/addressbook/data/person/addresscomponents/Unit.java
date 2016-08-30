@@ -23,4 +23,11 @@ public class Unit {
     public String getLevelValue(){
         return this.levelValue;
     }
+    
+    /**
+     * Gets the door number value in thic class
+     */
+    public String getDoorNumberValue(){
+        return this.doorNumberValue;
+    }
 }
