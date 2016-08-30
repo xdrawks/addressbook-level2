@@ -16,4 +16,11 @@ public class Unit {
         this.levelValue = level;
         this.doorNumberValue = doorNumber;
     }
+    
+    /**
+     * Gets the level value in this class.
+     */
+    public String getLevelValue(){
+        return this.levelValue;
+    }
 }
