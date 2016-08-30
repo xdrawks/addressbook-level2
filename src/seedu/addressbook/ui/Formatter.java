@@ -21,6 +21,10 @@ public class Formatter {
         return "[Command entered:" + fullInputLine + "]";
     }
     
+    static String formatOutputString(String output) {
+        return LINE_PREFIX + output.replace("\n", LS + LINE_PREFIX);
+    }
+
     /** Formats a list of strings as a viewable indexed list. */
     static String getIndexedListForViewing(List<String> listItems) {
         final StringBuilder formatted = new StringBuilder();
