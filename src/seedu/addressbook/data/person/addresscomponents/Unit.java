@@ -15,17 +15,10 @@ public class Unit {
     }
     
     /**
-     * Gets the level value in this class.
+     * Gets the unit value
      */
-    public String getLevelValue() {
-        return this.levelValue;
-    }
-    
-    /**
-     * Gets the door number value in thic class
-     */
-    public String getDoorNumberValue() {
-        return this.doorNumberValue;
+    public String getUnitValue() {
+        return this.unitValue;
     }
     
     @Override
