@@ -7,7 +7,11 @@ import java.util.List;
  */
 public class Formatter {
     
+    /** A decorative prefix added to the beginning of lines printed by AddressBook */
+    private static final String LINE_PREFIX = "|| ";
     
+    /** A platform independent line separator. */
+    private static final String LS = System.lineSeparator();
 
     
     
