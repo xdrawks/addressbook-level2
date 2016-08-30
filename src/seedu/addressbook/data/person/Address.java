@@ -1,5 +1,7 @@
 package seedu.addressbook.data.person;
 
+import java.util.Objects;
+
 import seedu.addressbook.data.exception.IllegalValueException;
 import seedu.addressbook.data.person.addresscomponents.Block;
 import seedu.addressbook.data.person.addresscomponents.PostalCode;
