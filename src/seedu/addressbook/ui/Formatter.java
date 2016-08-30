@@ -17,6 +17,10 @@ public class Formatter {
         return LINE_PREFIX + string;
     }
     
+    static String getCommandFeedback(String fullInputLine) {
+        return "[Command entered:" + fullInputLine + "]";
+    }
+    
     /** Formats a list of strings as a viewable indexed list. */
     static String getIndexedListForViewing(List<String> listItems) {
         final StringBuilder formatted = new StringBuilder();
