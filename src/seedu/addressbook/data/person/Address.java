@@ -25,6 +25,17 @@ public class Address {
     private Unit unit;
 
     /**
+     * Constructs address object with address components
+     */
+    public Address(Block block, PostalCode postalCode, Street street, Unit unit) {
+        this.block = block;
+        this.postalCode = postalCode;
+        this.street = street;
+        this.unit = unit;
+    }
+    
+    
+    /**
      * Validates given address.
      *
      * @throws IllegalValueException if given address string is invalid.
