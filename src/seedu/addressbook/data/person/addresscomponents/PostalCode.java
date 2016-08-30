@@ -13,4 +13,12 @@ public class PostalCode {
     public PostalCode (String postalCode){
         this.postalCodeValue = postalCode;
     }
+    
+    /**
+     * Gets the postal code value in this class
+     */
+    public String getPostalCodeValue(){
+        return this.postalCodeValue;
+    }
+    
 }
