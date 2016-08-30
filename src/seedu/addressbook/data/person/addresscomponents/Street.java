@@ -25,4 +25,11 @@ public class Street {
     public int hashCode() {
         return streetValue.hashCode();
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj == this //If they have same object
+                || (obj instanceof Street 
+                        && this.streetValue.equals(((Street)obj).streetValue)); //or check if they have same street value.
+    }
 }
