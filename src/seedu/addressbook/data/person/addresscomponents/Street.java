@@ -20,4 +20,9 @@ public class Street {
     public String getStreetValue() {
         return this.streetValue;
     }
+    
+    @Override
+    public int hashCode() {
+        return streetValue.hashCode();
+    }
 }
