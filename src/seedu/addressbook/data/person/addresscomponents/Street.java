@@ -10,14 +10,14 @@ public class Street {
     /**
      * Constructs an address component, Street
      */
-    public Street (String street){
+    public Street (String street) {
         this.streetValue = street;    
     }
     
     /**
      * Gets the street value in this class
      */
-    public String getStreetValue(){
+    public String getStreetValue() {
         return this.streetValue;
     }
 }

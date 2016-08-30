@@ -12,7 +12,7 @@ public class Unit {
     /**
      * Constructs an address component, unit, with level and doorNumber.
      */
-    public Unit (String level, String doorNumber){
+    public Unit (String level, String doorNumber) {
         this.levelValue = level;
         this.doorNumberValue = doorNumber;
     }
@@ -20,14 +20,14 @@ public class Unit {
     /**
      * Gets the level value in this class.
      */
-    public String getLevelValue(){
+    public String getLevelValue() {
         return this.levelValue;
     }
     
     /**
      * Gets the door number value in thic class
      */
-    public String getDoorNumberValue(){
+    public String getDoorNumberValue() {
         return this.doorNumberValue;
     }
 }

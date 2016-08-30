@@ -10,14 +10,14 @@ public class PostalCode {
     /**
      * Constructs an address component, postal code
      */
-    public PostalCode (String postalCode){
+    public PostalCode (String postalCode) {
         this.postalCodeValue = postalCode;
     }
     
     /**
      * Gets the postal code value in this class
      */
-    public String getPostalCodeValue(){
+    public String getPostalCodeValue() {
         return this.postalCodeValue;
     }
     

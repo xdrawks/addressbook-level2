@@ -10,14 +10,14 @@ public class Block {
     /**
      * Constructs an address component, block
      */
-    public Block (String block){
+    public Block (String block) {
         this.blockValue = block;
     }
     
     /**
      * Gets the block String in this class.
      */
-    public String getBlockValue(){
+    public String getBlockValue() {
         return this.blockValue;
     }
 }
