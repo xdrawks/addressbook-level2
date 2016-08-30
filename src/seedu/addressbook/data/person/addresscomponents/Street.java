@@ -5,19 +5,19 @@ package seedu.addressbook.data.person.addresscomponents;
  */
 public class Street {
     
-    private String street;
+    private String streetValue;
     
     /**
      * Constructs an address component, Street
      */
     public Street (String street){
-        this.street = street;    
+        this.streetValue = street;    
     }
     
     /**
      * Gets the street String in this class
      */
     public String getStreet(){
-        return this.street;
+        return this.streetValue;
     }
 }
