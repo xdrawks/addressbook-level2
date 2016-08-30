@@ -13,4 +13,11 @@ public class Street {
     public Street (String street){
         this.street = street;    
     }
+    
+    /**
+     * Gets the street String in this class
+     */
+    public String getStreet(){
+        return this.street;
+    }
 }
