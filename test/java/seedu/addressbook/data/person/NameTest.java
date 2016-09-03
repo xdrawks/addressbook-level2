@@ -9,7 +9,7 @@ import seedu.addressbook.data.exception.IllegalValueException;
 public class NameTest {
 
     @Test
-    public void testSameName() throws IllegalValueException {
+    public void testIdenticalName() throws IllegalValueException {
         Name name = new Name("Jason");
         Name other = new Name("Jason");
         assertEquals(name.isSimilar(other), true);
