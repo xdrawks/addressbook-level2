@@ -40,5 +40,12 @@ public class NameTest {
         Name other = new Name("pIKACHU rAiChU");
         assertEquals(name.isSimilar(other), true);
     }
+    
+    @Test
+    public void testdifferentOrderingName() throws IllegalValueException {
+        Name name = new Name("Pikachu RAICHU piChu");
+        Name other = new Name("pIKACHU pIChu rAiChU");
+        assertEquals(name.isSimilar(other), true);
+    }
 
 }
