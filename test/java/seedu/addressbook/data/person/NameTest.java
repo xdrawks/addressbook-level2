@@ -33,5 +33,12 @@ public class NameTest {
         Name name = new Name("Jason");
         assertEquals(name.isSimilar(null), false);
     }
+    
+    @Test
+    public void testdifferentCaseName() throws IllegalValueException {
+        Name name = new Name("Pikachu RAICHU");
+        Name other = new Name("pIKACHU rAiChU");
+        assertEquals(name.isSimilar(other), true);
+    }
 
 }
