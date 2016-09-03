@@ -37,13 +37,4 @@ public class Address extends Contact {
                 || (other instanceof Address // instanceof handles nulls
                 && this.value.equals(((Address) other).value)); // state check
     }
-
-    @Override
-    public int hashCode() {
-        return value.hashCode();
-    }
-
-    public boolean isPrivate() {
-        return isPrivate;
-    }
 }
