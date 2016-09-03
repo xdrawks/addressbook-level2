@@ -19,12 +19,10 @@ public class Email extends Contact {
      * @throws IllegalValueException if given email address string is invalid.
      */
     public Email(String email, boolean isPrivate) throws IllegalValueException {
-        this.isPrivate = isPrivate;
-        email = email.trim();
-        if (!isValidEmail(email)) {
+        super(email.trim(), isPrivate);
+        if (!isValidEmail(super.value)) {
             throw new IllegalValueException(MESSAGE_EMAIL_CONSTRAINTS);
         }
-        this.value = email;
     }
 
     /**
