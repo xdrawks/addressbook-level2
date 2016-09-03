@@ -9,5 +9,10 @@ public class Contact {
         this.value = value;
         this.isPrivate = isPrivate;
     }
+    
+    @Override
+    public String toString() {
+        return value;
+    }
 
 }
