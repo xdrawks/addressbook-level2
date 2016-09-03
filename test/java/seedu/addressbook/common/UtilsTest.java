@@ -11,4 +11,13 @@ public class UtilsTest {
     public void testOneNull() {   
         assertEquals(Utils.isAnyNull("well", 12, "well", "13", null, 15.6), true);
     }
+    
+    @Test
+    public void testAllUnique() {      
+        ArrayList<Integer> items = new ArrayList<>();
+        for (int i = 0; i < 100; i ++) {
+            items.add(i);
+        }
+        assertEquals(Utils.elementsAreUnique(items), true);
+    }
 }
