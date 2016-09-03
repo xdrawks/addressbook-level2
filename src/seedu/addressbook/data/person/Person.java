@@ -65,6 +65,10 @@ public class Person implements ReadOnlyPerson {
     public void setTags(UniqueTagList replacement) {
         tags.setTags(replacement);
     }
+    
+    public String getPrintableString() {
+        return Printer.getPrintableString(name.getPrintableString(), phone.getPrintableString(), address.getPrintableString(), email.getPrintableString());
+    }
 
     @Override
     public boolean equals(Object other) {
