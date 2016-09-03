@@ -63,6 +63,10 @@ public class Person implements ReadOnlyPerson {
         return new UniqueTagList(tags);
     }
 
+    public int getSequenceNumber() {
+        return sequenceNumber;
+    }
+
     /**
      * Replaces this person's tags with the tags in the argument tag list.
      */
