@@ -12,4 +12,20 @@ public class Tagging {
         this.tag = tag;
     }
 
+    /**
+     * Returns a string in the following format:
+     * + Jean Wong [client] for added tag
+     * - Jake Woo [colleague] for deleted tag
+     */
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder
+            .append(isAdded ? "+ " : "- ")
+            .append(person.getName())
+            .append(" [")
+            .append(tag.tagName)
+            .append("]");
+        return builder.toString();        
+    }
 }
