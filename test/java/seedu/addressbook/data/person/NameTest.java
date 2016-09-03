@@ -21,5 +21,11 @@ public class NameTest {
         Name other = new Name("Mary");
         assertEquals(name.isSimilar(other), false);
     }
+    
+    @Test
+    public void testIdenticalNameObject() throws IllegalValueException {
+        Name name = new Name("Jason");
+        assertEquals(name.isSimilar(name), true);
+    }
 
 }
