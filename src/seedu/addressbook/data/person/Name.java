@@ -3,6 +3,7 @@ package seedu.addressbook.data.person;
 import seedu.addressbook.data.exception.IllegalValueException;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -63,16 +64,26 @@ public class Name {
     
     /**
      * Returns true of the other name is very similar to this name.
-     * Two names are considered similar if ...
+     * Two names are considered similar if they have same words, that is case insensitive
      */
      public boolean isSimilar(Name other) {
          if (other == null) {
              return false;
          }
-         
+
          String thisName = this.fullName.toLowerCase();
          String otherName = other.fullName.toLowerCase();
-         return thisName.equals(otherName);
+         
+         HashSet<String> thisNameComponents = new HashSet<String>();
+         thisNameComponents.addAll(Arrays.asList(thisName.split(" ")));
+         
+         for (String i : otherName.split(" ")){
+             if (thisNameComponents.contains(i)) {
+                 return true;
+             }
+         }
+         
+         return false;
      }
 
 }
