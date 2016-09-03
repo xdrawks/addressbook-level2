@@ -20,4 +20,15 @@ public class UtilsTest {
         }
         assertEquals(Utils.elementsAreUnique(items), true);
     }
+    
+    @Test
+    public void testOneUnique() {      
+        ArrayList<Integer> items = new ArrayList<>();
+        for (int i = 0; i < 100; i ++) {
+            items.add(i);
+        }
+        items.add(10);
+        assertEquals(Utils.elementsAreUnique(items), false);
+    }
+    
 }
