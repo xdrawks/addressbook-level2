@@ -58,7 +58,7 @@ public class Phone implements Printable {
     }
 
     @Override
-    public void getPrintableString() {
+    public String getPrintableString() {
         // TODO Auto-generated method stub
         
     }

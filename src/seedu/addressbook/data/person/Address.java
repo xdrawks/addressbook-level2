@@ -57,7 +57,7 @@ public class Address implements Printable {
     }
 
     @Override
-    public void getPrintableString() {
+    public String getPrintableString() {
         // TODO Auto-generated method stub
         
     }

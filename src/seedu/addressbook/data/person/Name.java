@@ -62,9 +62,8 @@ public class Name implements Printable {
     }
 
     @Override
-    public void getPrintableString() {
-        // TODO Auto-generated method stub
-        
+    public String getPrintableString() {
+        return Name.class.getName() + ": " + this.fullName;
     }
 
 }
