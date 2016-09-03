@@ -47,5 +47,12 @@ public class NameTest {
         Name other = new Name("pIKACHU pIChu rAiChU");
         assertEquals(name.isSimilar(other), true);
     }
+    
+    @Test
+    public void testDifferentComplexName() throws IllegalValueException {
+        Name name = new Name("Pikachu RAiICHU piChu");
+        Name other = new Name("pIKACHU pIChu rAiChU");
+        assertEquals(name.isSimilar(other), true);
+    }
 
 }
