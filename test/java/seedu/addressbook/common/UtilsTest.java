@@ -1,5 +1,10 @@
 package seedu.addressbook.common;
 
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import org.junit.Test;
+
 public class UtilsTest {
     
     @Test
