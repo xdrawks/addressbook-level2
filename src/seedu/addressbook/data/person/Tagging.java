@@ -1,5 +1,7 @@
 package seedu.addressbook.data.person;
 
+import seedu.addressbook.data.tag.Tag;
+
 public class Tagging {
     
     private boolean isAdded; //If this value is false, it means the tag has been deleted.
